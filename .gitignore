@@ -1,0 +1,14 @@
+# Build artifacts
+build/
+install/
+log/
+
+# Editor cruft
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Don't commit large downloaded binaries (we install via Dockerfile)
+*.zip
+*.tar.gz
