@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 
 <robot name="pandalite">
+    <mujoco>
+        <compiler discardvisual="false" strippath="false" balanceinertia="true"/>
+    </mujoco>
     <!-- Materials -->
     <material name="grey">
         <color rgba="0.5 0.5 0.5 1.0"/>
