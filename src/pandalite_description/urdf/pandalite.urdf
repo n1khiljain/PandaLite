@@ -212,4 +212,46 @@
                     izz="1e-6"/>
             </inertial>
         </link>
+
+        <ros2_control name="PandaliteSystem" type="system">
+            <hardware>
+                <plugin>pandalite_mujoco_hw/PandaliteMujocoSystem</plugin>
+            </hardware>
+            <joint name="base_link_1_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+            <joint name="link_1_2_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+            <joint name="link_2_3_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+            <joint name="link_3_4_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+            <joint name="link_4_5_joint">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+            <joint name="wrist_yaw">
+                <command_interface name="position"/>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+            </joint>
+        </ros2_control>
 </robot>
