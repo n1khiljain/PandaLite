@@ -17,6 +17,7 @@ docker run --platform linux/amd64 -it --rm -v "$(pwd):/workspace" panda-dev bash
 Inside the container:
 ```bash
 source /opt/ros/jazzy/setup.bash
+source /workspace/install/setup.bash     # Your packages
 ```
 
 ## Sanity check
